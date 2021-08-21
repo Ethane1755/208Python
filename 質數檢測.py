@@ -10,4 +10,4 @@ if is_prime(n):
     print('是質數')
 else:
     print('不是質數')
-#謝育声帥
+
