@@ -6,7 +6,9 @@ def is_prime(number):
 
 n = int(input('輸入一個正整數:'))
 
-if is_prime(n):
+if n ==1:
+    print('不是質數')
+elif is_prime(n):
     print('是質數')
 else:
     print('不是質數')
