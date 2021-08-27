@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f0f0;
+    font-family: arial, "verdana";
+}
+
+head{
+    font-weight: 1000;
+    background-image: ("D:/USER/Pictures/Camera Roll/背景.jpg");
+}
+ul{
+    list-style-type: circle;
+}
