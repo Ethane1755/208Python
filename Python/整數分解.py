@@ -11,3 +11,4 @@ while 1:
                     print('%d*'%i,end='')
                 break
     print()
+
