@@ -15,3 +15,4 @@ else:
     p=input('please input the publisher:')
     pt=pt+'('+y+').'+n+', '+p+'.'
 print(pt)
+input()
