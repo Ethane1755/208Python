@@ -1,5 +1,4 @@
-import numpy as np
-P = input('your raw test:')
+P = input('your raw text:')
 ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 CBA = "DEFGHIJKLMNOPQRSTUVWXYZABCdefghijklmnopqrstuvwxyzabc"
 u = len(P)
