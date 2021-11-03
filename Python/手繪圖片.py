@@ -3,7 +3,7 @@
 from PIL import Image
 import numpy as np
 
-a = np.asarray(Image.open('D:/Database/Python/Spyder/123.jpg').convert('L')).astype('float')
+a = np.asarray(Image.open('D:/USER/Pictures/Lightroom/Images/2021/2021-10-24/247708250_625960408649339_5024420563668919005_n.jpg').convert('L')).astype('float')
 
 depth = 10
 grad = np.gradient(a)
@@ -25,4 +25,4 @@ b = 255*(dx*uni_x + dy*uni_y + dz*uni_z)
 b = b.clip(0,255)
 
 im = Image.fromarray(b.astype('uint8'))
-im.save('D:/Database/Python/Spyder/hello.jpg')
+im.save('D:/USER/Pictures/Lightroom/Images/2021/2021-10-24/test.jpg')
