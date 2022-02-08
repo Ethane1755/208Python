@@ -4,7 +4,7 @@ from geopy.extra.rate_limiter import RateLimiter
 import folium
 from folium.plugins import MarkerCluster
 
-locator = Nominatim(user_agent='myGeocoder')
+locator = Nominatim(user_agent='name_of_your_app')
 
 print('強烈建議使用原文地名')
 a = input('please input the place you want to search:')
@@ -25,5 +25,5 @@ while b == "yes":
         folium.Marker(lat_lonc,popup=x).add_to(cluster)
         b = input('Do you want to add another place to the map? ')  
 else:        
-    print('Thank you.')
-    Map.save('a.html')
+        print('Thank you.')
+        Map.save('a.html')

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_eb31694b315247c29ecd903888540a1c {
+                #map_a459ccd01ee24da3ab196ac81ea1f4cc {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,15 +38,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_eb31694b315247c29ecd903888540a1c" ></div>
+            <div class="folium-map" id="map_a459ccd01ee24da3ab196ac81ea1f4cc" ></div>
         
 </body>
 <script>    
     
-            var map_eb31694b315247c29ecd903888540a1c = L.map(
-                "map_eb31694b315247c29ecd903888540a1c",
+            var map_a459ccd01ee24da3ab196ac81ea1f4cc = L.map(
+                "map_a459ccd01ee24da3ab196ac81ea1f4cc",
                 {
-                    center: [25.03368755, 121.56482243101316],
+                    center: [25.05069845, 121.5501221482678],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -58,51 +58,32 @@
 
         
     
-            var tile_layer_d55019190dac4432925305a4bba7692f = L.tileLayer(
-                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_eb31694b315247c29ecd903888540a1c);
+            var tile_layer_ca0fc6d7e9f148ceb5e12d2e386f29dd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a459ccd01ee24da3ab196ac81ea1f4cc);
         
     
-            var marker_cluster_5547aa11bc4547f5877aed257395927c = L.markerClusterGroup(
+            var marker_cluster_c5ab7be498554622aec63f8e391bd256 = L.markerClusterGroup(
                 {}
             );
-            map_eb31694b315247c29ecd903888540a1c.addLayer(marker_cluster_5547aa11bc4547f5877aed257395927c);
+            map_a459ccd01ee24da3ab196ac81ea1f4cc.addLayer(marker_cluster_c5ab7be498554622aec63f8e391bd256);
         
     
-            var marker_4e9fe9f65a9e4aab97438630571dc939 = L.marker(
-                [25.03368755, 121.56482243101316],
+            var marker_d3c7084c16c544c58d9b6bcbae50cf6c = L.marker(
+                [25.05069845, 121.5501221482678],
                 {}
-            ).addTo(marker_cluster_5547aa11bc4547f5877aed257395927c);
+            ).addTo(marker_cluster_c5ab7be498554622aec63f8e391bd256);
         
     
-        var popup_cb90fd2a03144754b7733c929893c5fb = L.popup({"maxWidth": "100%"});
+        var popup_14fd6a6a09ee4f9ea4a90168135681a8 = L.popup({"maxWidth": "100%"});
 
         
-            var html_04f4b0ec1ff34879bf26e10715fc2da1 = $(`<div id="html_04f4b0ec1ff34879bf26e10715fc2da1" style="width: 100.0%; height: 100.0%;">台北101</div>`)[0];
-            popup_cb90fd2a03144754b7733c929893c5fb.setContent(html_04f4b0ec1ff34879bf26e10715fc2da1);
+            var html_98d3aa8720fb4f50a3247e73d844f65f = $(`<div id="html_98d3aa8720fb4f50a3247e73d844f65f" style="width: 100.0%; height: 100.0%;">Unknown</div>`)[0];
+            popup_14fd6a6a09ee4f9ea4a90168135681a8.setContent(html_98d3aa8720fb4f50a3247e73d844f65f);
         
 
-        marker_4e9fe9f65a9e4aab97438630571dc939.bindPopup(popup_cb90fd2a03144754b7733c929893c5fb)
-        ;
-
-        
-    
-    
-            var marker_77469547017d4f6ca9b46e2b6f63e0f7 = L.marker(
-                [39.91727565, 116.39076940577283],
-                {}
-            ).addTo(marker_cluster_5547aa11bc4547f5877aed257395927c);
-        
-    
-        var popup_72bc236f8edf465c8871a2414f011bfc = L.popup({"maxWidth": "100%"});
-
-        
-            var html_0a9b5a46e59d46c3aedb71ef0f23b94b = $(`<div id="html_0a9b5a46e59d46c3aedb71ef0f23b94b" style="width: 100.0%; height: 100.0%;">紫禁城</div>`)[0];
-            popup_72bc236f8edf465c8871a2414f011bfc.setContent(html_0a9b5a46e59d46c3aedb71ef0f23b94b);
-        
-
-        marker_77469547017d4f6ca9b46e2b6f63e0f7.bindPopup(popup_72bc236f8edf465c8871a2414f011bfc)
+        marker_d3c7084c16c544c58d9b6bcbae50cf6c.bindPopup(popup_14fd6a6a09ee4f9ea4a90168135681a8)
         ;
 
         
