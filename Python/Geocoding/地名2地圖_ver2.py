@@ -24,5 +24,5 @@ while b == "yes":
         folium.Marker(lat_lonc,popup=c).add_to(cluster)
         b = input('Do you want to add another place to the map? ')  
 else:        
-    print('Thank you.')
-    Map.save('a.html')
+        print('Thank you.')
+        Map.save('a.html')
