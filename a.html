@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb31694b315247c29ecd903888540a1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eb31694b315247c29ecd903888540a1c" ></div>
+        
+</body>
+<script>    
+    
+            var map_eb31694b315247c29ecd903888540a1c = L.map(
+                "map_eb31694b315247c29ecd903888540a1c",
+                {
+                    center: [25.03368755, 121.56482243101316],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d55019190dac4432925305a4bba7692f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eb31694b315247c29ecd903888540a1c);
+        
+    
+            var marker_cluster_5547aa11bc4547f5877aed257395927c = L.markerClusterGroup(
+                {}
+            );
+            map_eb31694b315247c29ecd903888540a1c.addLayer(marker_cluster_5547aa11bc4547f5877aed257395927c);
+        
+    
+            var marker_4e9fe9f65a9e4aab97438630571dc939 = L.marker(
+                [25.03368755, 121.56482243101316],
+                {}
+            ).addTo(marker_cluster_5547aa11bc4547f5877aed257395927c);
+        
+    
+        var popup_cb90fd2a03144754b7733c929893c5fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04f4b0ec1ff34879bf26e10715fc2da1 = $(`<div id="html_04f4b0ec1ff34879bf26e10715fc2da1" style="width: 100.0%; height: 100.0%;">台北101</div>`)[0];
+            popup_cb90fd2a03144754b7733c929893c5fb.setContent(html_04f4b0ec1ff34879bf26e10715fc2da1);
+        
+
+        marker_4e9fe9f65a9e4aab97438630571dc939.bindPopup(popup_cb90fd2a03144754b7733c929893c5fb)
+        ;
+
+        
+    
+    
+            var marker_77469547017d4f6ca9b46e2b6f63e0f7 = L.marker(
+                [39.91727565, 116.39076940577283],
+                {}
+            ).addTo(marker_cluster_5547aa11bc4547f5877aed257395927c);
+        
+    
+        var popup_72bc236f8edf465c8871a2414f011bfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a9b5a46e59d46c3aedb71ef0f23b94b = $(`<div id="html_0a9b5a46e59d46c3aedb71ef0f23b94b" style="width: 100.0%; height: 100.0%;">紫禁城</div>`)[0];
+            popup_72bc236f8edf465c8871a2414f011bfc.setContent(html_0a9b5a46e59d46c3aedb71ef0f23b94b);
+        
+
+        marker_77469547017d4f6ca9b46e2b6f63e0f7.bindPopup(popup_72bc236f8edf465c8871a2414f011bfc)
+        ;
+
+        
+    
+</script>

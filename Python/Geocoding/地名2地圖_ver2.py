@@ -4,7 +4,7 @@ from geopy.extra.rate_limiter import RateLimiter
 import folium
 from folium.plugins import MarkerCluster
 
-locator = Nominatim(user_agent='myGeocoder')
+locator = Nominatim(user_agent='name_of_your_app')
 geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
 
 print('強烈建議使用原文地名')

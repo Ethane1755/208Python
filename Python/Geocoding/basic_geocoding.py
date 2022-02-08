@@ -1,7 +1,7 @@
 from geopy import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 
-locator = Nominatim(user_agent='myGeocoder')
+locator = Nominatim(user_agent='name_of_your_app')
 geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
 print('強烈建議使用原文地名')
 a = input('please input the place you want to search:')
