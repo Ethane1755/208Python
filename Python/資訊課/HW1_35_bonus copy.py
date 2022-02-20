@@ -1,0 +1,7 @@
+print('Please use Engish to answer the questions below.')
+name=input('What is your name? ')
+print('Hello,',name)
+wh=input('What are you doing now?')
+print('Wow, I love, ', wh, 'too!')
+th=input('try to name a thing you like in CK.')
+print('CK is full of ', th,'s.')
