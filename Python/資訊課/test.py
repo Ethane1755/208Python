@@ -1,22 +1,12 @@
-while True:
-    try:
-        n=int(input())
-        k=[]
-        for i in range (1,n):
-            if n%i == 0:
-                k.append(i)
-        if sum(k)>n:
-            print("盈數")
-        elif sum(k)<n:
-            print("虧數")
-        elif sum(k)==n:
-            print("完全數")
-    except:
-        break
+a=int(input())
+c=input()
+k=[]
+k.append(c.split())
 
+l=len(k)
+m=0
 
-
-
-
-
-
+for i in range (1,l+1):
+    d=k[m]
+    m=m+1
+    l=len(d)
