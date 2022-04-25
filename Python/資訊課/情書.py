@@ -3,12 +3,12 @@ s=str(input())
 
 s1 = s[:len(s)//2]
 s2 = s[len(s)//2:]
-print(s2+s1)
+
 ###2
 str=s2+s1
 length_str=len(str)
 sliced_str=str[length_str::-1] 
-print(sliced_str)
+
 ###3
 letter=sliced_str
 A=letter.replace('A','')
@@ -37,12 +37,12 @@ W=V.replace('W','')
 X=W.replace('X','')
 Y=X.replace('Y','')
 Z=Y.replace('Z','')
-print(Z)
+
 ###4
 a=Z
 b=a.replace("*","i")
 c=b.replace("2","to")
-print(c)
+
 ###5
 s=c
 
@@ -55,7 +55,7 @@ for index, value in enumerate(c):
         c[index] = "I"
 
 l=" ".join(c)
-print(l)
+
 ###end
 k=". ".join([each.capitalize() for each in l.split(". ")])
 c=k.split()
