@@ -5,7 +5,7 @@ c=list(map(int,c))
 d=[]
 
 for i in c:
-    if i >= (sum(c)//len(c)):
+    if i >= (sum(c)/len(c)):
         d.append(i)
 
 
