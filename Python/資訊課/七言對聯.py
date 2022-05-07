@@ -7,7 +7,7 @@ for i in range(a):
     m=input()
     h=k.split()
     n=m.split()
-    if h[1]!=h[3] and h[1]==h[6] and n[1]!=n[3] and n[1]==n[6]:
+    if h[1]!=h[3] and h[1]==h[5] and n[1]!=n[3] and n[1]==n[5]:
         c.append(1)
     else:
         b.append('A')
