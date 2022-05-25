@@ -1,3 +1,4 @@
+#INPUT
 a=input()
 b,c=a.split()
 b=int(b)
@@ -5,17 +6,22 @@ c=int(c)
 d=input()
 d=d.split()
 d=list(map(int,d))
-k=d[0]
-l1=[]
-m=1
+#VARIBLE K IS BALANCE
+x=d[0]
+#DROP D[0]
 d.remove(d[0])
+#DECIDE IF HAS MONEY
+m=0
+#START TRANSACTION
+m=1
 for i in d:
-    if i >=k+c and m==1:
-        l1.append(i)
+    #SELL
+    if i>x+c:
+        x=-x+i
         m=0
-    if m==0 and i<=k-c:
-        l1.append(-i)
+    #BUY
+    elif m==0 and i<=x-c:
+        x=i
         m=1
-    print(i,m)
-print(l1)
-print(int(sum(l1)))
+    print(x,',',m)
+print(x)
