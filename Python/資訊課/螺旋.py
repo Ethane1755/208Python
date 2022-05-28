@@ -14,4 +14,3 @@ for c in ['#ebf2fd','#c3d8f9','#9bbef5','#5f97ef','#4b8aed','#377deb']:
   t.end_fill()
 
 turtle.done()
-

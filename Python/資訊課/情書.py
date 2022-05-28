@@ -7,7 +7,7 @@ s2 = s[len(s)//2:]
 ###2
 str=s2+s1
 length_str=len(str)
-sliced_str=str[length_str::-1] 
+sliced_str=str[length_str::-1]
 
 ###3
 letter=sliced_str
