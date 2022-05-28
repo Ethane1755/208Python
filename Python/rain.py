@@ -16,3 +16,4 @@ d = c*(1-e* np.tan(K))
 print(a*c*d)
 #此公式有致命問題:原公式未給出單位
 #僅做練習使用
+"whalalalala"
