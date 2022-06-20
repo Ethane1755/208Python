@@ -5,7 +5,7 @@ from folium import plugins
 data = pd.read_csv('台灣快篩.csv', encoding='UTF-8',  delimiter=',')
 park_map = folium.Map(
     location=[data['Lat'].mean(), data['Long'].mean()],
-    zoom_start=10,
+    zoom_start=8,
     control_scale=True)
 marker_cluster = plugins.MarkerCluster().add_to(park_map)
 
