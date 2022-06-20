@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_096c0faa35934374aaecc7aaa9b267ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_096c0faa35934374aaecc7aaa9b267ea" ></div>
+        
+</body>
+<script>    
+    
+            var map_096c0faa35934374aaecc7aaa9b267ea = L.map(
+                "map_096c0faa35934374aaecc7aaa9b267ea",
+                {
+                    center: [22.65069621358975, 120.3184156282051],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_096c0faa35934374aaecc7aaa9b267ea);
+
+            
+
+        
+    
+            var tile_layer_43fc3147d8a842c48aaf978d7f2fcbf8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_096c0faa35934374aaecc7aaa9b267ea);
+        
+    
+            var marker_cluster_9651f306a8994594907bffdd56ed387c = L.markerClusterGroup(
+                {}
+            );
+            map_096c0faa35934374aaecc7aaa9b267ea.addLayer(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+            var marker_cf07ab1b11b34b5cbe145875a97f8401 = L.marker(
+                [22.56481191, 120.3538521],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_b2141572e1bb462ba92661ed068f4724 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_492cbe02f63c492e909bc8fe988004d4 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjMmbmJzcDvlsI/muK88L2gyPjwvYlNpYW9nYW5nPjxocj48YnI+U2lhb2dhbmc8YnI+UjM=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_b2141572e1bb462ba92661ed068f4724.setContent(i_frame_492cbe02f63c492e909bc8fe988004d4);
+        
+
+        marker_cf07ab1b11b34b5cbe145875a97f8401.bindPopup(popup_b2141572e1bb462ba92661ed068f4724)
+        ;
+
+        
+    
+    
+            marker_cf07ab1b11b34b5cbe145875a97f8401.bindTooltip(
+                `<div>
+                     小港
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d2a78b035d04c1ab32eafab1fc6a95a = L.marker(
+                [22.57011232, 120.3421469],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_28b5db645ac944998da7a6dd200a4438 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_281beb8e92c8416b81aeeb29102d3e0c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjQmbmJzcDvpq5jpm4TlnIvpmpvmqZ/loLQ8L2gyPjwvYkthb2hzaXVuZyBJbnRlcm5hdGlvbmFsIEFpcnBvcnQ+PGhyPjxicj5LYW9oc2l1bmcgSW50ZXJuYXRpb25hbCBBaXJwb3J0PGJyPlI0" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_28b5db645ac944998da7a6dd200a4438.setContent(i_frame_281beb8e92c8416b81aeeb29102d3e0c);
+        
+
+        marker_9d2a78b035d04c1ab32eafab1fc6a95a.bindPopup(popup_28b5db645ac944998da7a6dd200a4438)
+        ;
+
+        
+    
+    
+            marker_9d2a78b035d04c1ab32eafab1fc6a95a.bindTooltip(
+                `<div>
+                     高雄國際機場
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1d8f53351a64bffaf08d21825518b2f = L.marker(
+                [22.58035095, 120.3284408],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_df80d7f77ffd4766b1a36cf1da4657a4 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_af69135d7bb7472e8ee5d8e56f393aff = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjRBJm5ic3A76I2J6KGZPC9oMj48L2JDYW95YT48aHI+PGJyPkNhb3lhPGJyPlI0QQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_df80d7f77ffd4766b1a36cf1da4657a4.setContent(i_frame_af69135d7bb7472e8ee5d8e56f393aff);
+        
+
+        marker_f1d8f53351a64bffaf08d21825518b2f.bindPopup(popup_df80d7f77ffd4766b1a36cf1da4657a4)
+        ;
+
+        
+    
+    
+            marker_f1d8f53351a64bffaf08d21825518b2f.bindTooltip(
+                `<div>
+                     草衙
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31583cdcaae44f2e808f18bef99e21f0 = L.marker(
+                [22.58853833, 120.3219713],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_276e93e8098f42718780b26bccdfa349 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_8bcf902c29e246df9c6861ad3cc3149c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjUmbmJzcDvliY3pjq7pq5jkuK08L2gyPjwvYkNpYW5qaGVuIFNlbmlvciBIaWdoIFNjaG9vbD48aHI+PGJyPkNpYW5qaGVuIFNlbmlvciBIaWdoIFNjaG9vbDxicj5SNQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_276e93e8098f42718780b26bccdfa349.setContent(i_frame_8bcf902c29e246df9c6861ad3cc3149c);
+        
+
+        marker_31583cdcaae44f2e808f18bef99e21f0.bindPopup(popup_276e93e8098f42718780b26bccdfa349)
+        ;
+
+        
+    
+    
+            marker_31583cdcaae44f2e808f18bef99e21f0.bindTooltip(
+                `<div>
+                     前鎮高中
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5daddd770a814ca2ace8fd450a07fb2a = L.marker(
+                [22.59683914, 120.3151478],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_1d5806b1b34a45589fd2a9d7c7d220da = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_39dcca6599904f048639cba0a22dc75e = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjYmbmJzcDvlh7Hml4s8L2gyPjwvYkthaXN5dWFuPjxocj48YnI+S2Fpc3l1YW48YnI+UjY=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_1d5806b1b34a45589fd2a9d7c7d220da.setContent(i_frame_39dcca6599904f048639cba0a22dc75e);
+        
+
+        marker_5daddd770a814ca2ace8fd450a07fb2a.bindPopup(popup_1d5806b1b34a45589fd2a9d7c7d220da)
+        ;
+
+        
+    
+    
+            marker_5daddd770a814ca2ace8fd450a07fb2a.bindTooltip(
+                `<div>
+                     凱旋
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9c56899aa834e19b23f6b15773867f4 = L.marker(
+                [22.60583276, 120.307702],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_8c9fce17ad494708a2d47978177fe313 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_b554ec2886114e82accebb841caa2299 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjcmbmJzcDvnjYXnlLI8L2gyPjwvYlNoaWhqaWE+PGhyPjxicj5TaGloamlhPGJyPlI3" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8c9fce17ad494708a2d47978177fe313.setContent(i_frame_b554ec2886114e82accebb841caa2299);
+        
+
+        marker_a9c56899aa834e19b23f6b15773867f4.bindPopup(popup_8c9fce17ad494708a2d47978177fe313)
+        ;
+
+        
+    
+    
+            marker_a9c56899aa834e19b23f6b15773867f4.bindTooltip(
+                `<div>
+                     獅甲
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b3fb7d2743c45e9a653f12972265be5 = L.marker(
+                [22.61383541, 120.3046764],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_5e1077619dd14d3588f366f53d2a81f8 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_13dee0f1100540ae94d74b5215e511c2 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjgmbmJzcDvkuInlpJrllYblnIg8L2gyPjwvYlNhbmR1byBTaG9wcGluZyBEaXN0cmljdD48aHI+PGJyPlNhbmR1byBTaG9wcGluZyBEaXN0cmljdDxicj5SOA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5e1077619dd14d3588f366f53d2a81f8.setContent(i_frame_13dee0f1100540ae94d74b5215e511c2);
+        
+
+        marker_0b3fb7d2743c45e9a653f12972265be5.bindPopup(popup_5e1077619dd14d3588f366f53d2a81f8)
+        ;
+
+        
+    
+    
+            marker_0b3fb7d2743c45e9a653f12972265be5.bindTooltip(
+                `<div>
+                     三多商圈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c74d9c68ec014a1181c584777cc4dfd6 = L.marker(
+                [22.6245709, 120.3006424],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_8aa328829ff944b2b444c045c26aa915 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_1afde8c361704d7db3af4d9897394903 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjkmbmJzcDvkuK3lpK7lhazlnJI8L2gyPjwvYkNlbnRyYWwgUGFyaz48aHI+PGJyPkNlbnRyYWwgUGFyazxicj5SOQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8aa328829ff944b2b444c045c26aa915.setContent(i_frame_1afde8c361704d7db3af4d9897394903);
+        
+
+        marker_c74d9c68ec014a1181c584777cc4dfd6.bindPopup(popup_8aa328829ff944b2b444c045c26aa915)
+        ;
+
+        
+    
+    
+            marker_c74d9c68ec014a1181c584777cc4dfd6.bindTooltip(
+                `<div>
+                     中央公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cb1a10de55743c3b4b7f3018b964aae = L.marker(
+                [22.631386, 120.301951],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_f70f95ceeda9402e82ff07d1b881c9c0 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_f698c6a8dd5a4bfb8004621c7b1e58bc = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjEwJm5ic3A7576O6bqX5bO2PC9oMj48L2JGb3Jtb3NhIEJvdWxldmFyZD48aHI+PGJyPkZvcm1vc2EgQm91bGV2YXJkPGJyPlIxMA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f70f95ceeda9402e82ff07d1b881c9c0.setContent(i_frame_f698c6a8dd5a4bfb8004621c7b1e58bc);
+        
+
+        marker_7cb1a10de55743c3b4b7f3018b964aae.bindPopup(popup_f70f95ceeda9402e82ff07d1b881c9c0)
+        ;
+
+        
+    
+    
+            marker_7cb1a10de55743c3b4b7f3018b964aae.bindTooltip(
+                `<div>
+                     美麗島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1ac0fa968014e49825d9ba13ed46d92 = L.marker(
+                [22.63966255, 120.3027023],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_4715099a490e4e6d8a98b992c69f1cce = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_a2f2a5069e794ff9b42519e0241e0e4c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjExJm5ic3A76auY6ZuE6LuK56uZPC9oMj48L2JLYW9oc2l1bmcgTWFpbiBTdGF0aW9uPjxocj48YnI+S2FvaHNpdW5nIE1haW4gU3RhdGlvbjxicj5SMTE=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_4715099a490e4e6d8a98b992c69f1cce.setContent(i_frame_a2f2a5069e794ff9b42519e0241e0e4c);
+        
+
+        marker_b1ac0fa968014e49825d9ba13ed46d92.bindPopup(popup_4715099a490e4e6d8a98b992c69f1cce)
+        ;
+
+        
+    
+    
+            marker_b1ac0fa968014e49825d9ba13ed46d92.bindTooltip(
+                `<div>
+                     高雄車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ef4af6c3957406aaee9e440876700db = L.marker(
+                [22.64829692, 120.3033675],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_53c684dd2675497191ec8633b26b47aa = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_e9e1078621cf4f3b8e2fb8482cf964e3 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjEyJm5ic3A75b6M6ambPC9oMj48L2JIb3V5aT48aHI+PGJyPkhvdXlpPGJyPlIxMg==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_53c684dd2675497191ec8633b26b47aa.setContent(i_frame_e9e1078621cf4f3b8e2fb8482cf964e3);
+        
+
+        marker_2ef4af6c3957406aaee9e440876700db.bindPopup(popup_53c684dd2675497191ec8633b26b47aa)
+        ;
+
+        
+    
+    
+            marker_2ef4af6c3957406aaee9e440876700db.bindTooltip(
+                `<div>
+                     後驛
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa58000979ff4992a26889d60452e2a0 = L.marker(
+                [22.65718817, 120.3030886],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_61e7b761d76e476480fbe2192a8c1ab9 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_e108e5b42e6e43c4acf5846c9030c303 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjEzJm5ic3A75Ye55a2Q5bqVPC9oMj48L2JBb3phaWRpPjxocj48YnI+QW96YWlkaTxicj5SMTM=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_61e7b761d76e476480fbe2192a8c1ab9.setContent(i_frame_e108e5b42e6e43c4acf5846c9030c303);
+        
+
+        marker_fa58000979ff4992a26889d60452e2a0.bindPopup(popup_61e7b761d76e476480fbe2192a8c1ab9)
+        ;
+
+        
+    
+    
+            marker_fa58000979ff4992a26889d60452e2a0.bindTooltip(
+                `<div>
+                     凹子底
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f194092dc624a3993d6b5ad6ac1d9cc = L.marker(
+                [22.66657386, 120.3028955],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_b9fd20727b25412c9f7268e9c6af6f9c = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_f012c2b5a3d54a999e928e5eb8252cca = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE0Jm5ic3A75beo6JuLPC9oMj48L2JLYW9oc2l1bmcgQXJlbmE+PGhyPjxicj5LYW9oc2l1bmcgQXJlbmE8YnI+UjE0" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_b9fd20727b25412c9f7268e9c6af6f9c.setContent(i_frame_f012c2b5a3d54a999e928e5eb8252cca);
+        
+
+        marker_4f194092dc624a3993d6b5ad6ac1d9cc.bindPopup(popup_b9fd20727b25412c9f7268e9c6af6f9c)
+        ;
+
+        
+    
+    
+            marker_4f194092dc624a3993d6b5ad6ac1d9cc.bindTooltip(
+                `<div>
+                     巨蛋
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6801e259d01409e9914eb55eead3532 = L.marker(
+                [22.67681026, 120.3066935],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_25d3c818593544558d2b5d0c3c191de2 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_b349671a642846c18f3a7303b8726f1f = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE1Jm5ic3A755Sf5oWL5ZyS5Y2APC9oMj48L2JFY29sb2dpY2FsIERpc3RyaWN0Pjxocj48YnI+RWNvbG9naWNhbCBEaXN0cmljdDxicj5SMTU=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_25d3c818593544558d2b5d0c3c191de2.setContent(i_frame_b349671a642846c18f3a7303b8726f1f);
+        
+
+        marker_e6801e259d01409e9914eb55eead3532.bindPopup(popup_25d3c818593544558d2b5d0c3c191de2)
+        ;
+
+        
+    
+    
+            marker_e6801e259d01409e9914eb55eead3532.bindTooltip(
+                `<div>
+                     生態園區
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_728ec32c6bd14064b76206ecec3eb4d7 = L.marker(
+                [22.68801596, 120.3095473],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_2408186c9a64466a973ec21e937eff1b = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_0c3c718662d94da88bcf73261a2ddb02 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE2Jm5ic3A75bem54efPC9oMj48L2JadW95aW5nPjxocj48YnI+WnVveWluZzxicj5SMTY=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_2408186c9a64466a973ec21e937eff1b.setContent(i_frame_0c3c718662d94da88bcf73261a2ddb02);
+        
+
+        marker_728ec32c6bd14064b76206ecec3eb4d7.bindPopup(popup_2408186c9a64466a973ec21e937eff1b)
+        ;
+
+        
+    
+    
+            marker_728ec32c6bd14064b76206ecec3eb4d7.bindTooltip(
+                `<div>
+                     左營
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ce84b638529490a92c0986cb0e12b0b = L.marker(
+                [22.70217026, 120.3025307],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_001b54f017204af69102a3d1af0c2831 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_0e30e523b9e14ea4acdb68930218fa62 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE3Jm5ic3A75LiW6YGLPC9oMj48L2JXb3JsZCBHYW1lcz48aHI+PGJyPldvcmxkIEdhbWVzPGJyPlIxNw==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_001b54f017204af69102a3d1af0c2831.setContent(i_frame_0e30e523b9e14ea4acdb68930218fa62);
+        
+
+        marker_8ce84b638529490a92c0986cb0e12b0b.bindPopup(popup_001b54f017204af69102a3d1af0c2831)
+        ;
+
+        
+    
+    
+            marker_8ce84b638529490a92c0986cb0e12b0b.bindTooltip(
+                `<div>
+                     世運
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_330e47beeb4b4812a15291cb9f7241ee = L.marker(
+                [22.70848479, 120.3023161],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_d62365c514df47a380366e88a5f4d8dc = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_49958198dd7b4d689be1ed7cbdc5995c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE4Jm5ic3A75rK55bug5ZyL5bCPPC9oMj48L2JPaWwgUmVmaW5lcnkgRWxlbWVudGFyeSBTY2hvb2w+PGhyPjxicj5PaWwgUmVmaW5lcnkgRWxlbWVudGFyeSBTY2hvb2w8YnI+UjE4" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_d62365c514df47a380366e88a5f4d8dc.setContent(i_frame_49958198dd7b4d689be1ed7cbdc5995c);
+        
+
+        marker_330e47beeb4b4812a15291cb9f7241ee.bindPopup(popup_d62365c514df47a380366e88a5f4d8dc)
+        ;
+
+        
+    
+    
+            marker_330e47beeb4b4812a15291cb9f7241ee.bindTooltip(
+                `<div>
+                     油廠國小
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b71123a132ff417795bdba53b7428baa = L.marker(
+                [22.71863888, 120.3072728],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_c1a329aff20b4c8687f03135b469cc4e = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_a03b76020c5749e98abd8897d7e66c2b = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjE5Jm5ic3A75qWg5qKT5Yqg5bel5Y2APC9oMj48L2JOYW56aWggRXhwb3J0IFByb2Nlc3NpbmcgWm9uZT48aHI+PGJyPk5hbnppaCBFeHBvcnQgUHJvY2Vzc2luZyBab25lPGJyPlIxOQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_c1a329aff20b4c8687f03135b469cc4e.setContent(i_frame_a03b76020c5749e98abd8897d7e66c2b);
+        
+
+        marker_b71123a132ff417795bdba53b7428baa.bindPopup(popup_c1a329aff20b4c8687f03135b469cc4e)
+        ;
+
+        
+    
+    
+            marker_b71123a132ff417795bdba53b7428baa.bindTooltip(
+                `<div>
+                     楠梓加工區
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad9ff52204ca4697b5f44bf9d43f01a8 = L.marker(
+                [22.72291407, 120.3163923],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_12ad2fb6353d40aeac6fa496a800bf90 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_3263c7cb98394d09b1ba37d194a6b7e0 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjIwJm5ic3A75b6M5YuBPC9oMj48L2JIb3VqaW5nPjxocj48YnI+SG91amluZzxicj5SMjA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_12ad2fb6353d40aeac6fa496a800bf90.setContent(i_frame_3263c7cb98394d09b1ba37d194a6b7e0);
+        
+
+        marker_ad9ff52204ca4697b5f44bf9d43f01a8.bindPopup(popup_12ad2fb6353d40aeac6fa496a800bf90)
+        ;
+
+        
+    
+    
+            marker_ad9ff52204ca4697b5f44bf9d43f01a8.bindTooltip(
+                `<div>
+                     後勁
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3450bf4a849e404a97bd929791b45f56 = L.marker(
+                [22.72932659, 120.3210486],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_3bcd5de96053424c9e9eb01843d5289c = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_8bbe2497a194427991d8886059a11d01 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjIxJm5ic3A76YO95pyD5YWs5ZySPC9oMj48L2JNZXRyb3BvbGl0YW4gUGFyaz48aHI+PGJyPk1ldHJvcG9saXRhbiBQYXJrPGJyPlIyMQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_3bcd5de96053424c9e9eb01843d5289c.setContent(i_frame_8bbe2497a194427991d8886059a11d01);
+        
+
+        marker_3450bf4a849e404a97bd929791b45f56.bindPopup(popup_3bcd5de96053424c9e9eb01843d5289c)
+        ;
+
+        
+    
+    
+            marker_3450bf4a849e404a97bd929791b45f56.bindTooltip(
+                `<div>
+                     都會公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e110c9fb5091402caa8f296941b43bd3 = L.marker(
+                [22.74466397, 120.3177012],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_23401845ad864b7c9e4e52a2c5b8cf5e = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_19f089404ec549cfb2c1a82356c5cb15 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjIyJm5ic3A76Z2S5Z+UPC9oMj48L2JDaW5ncHU+PGhyPjxicj5DaW5ncHU8YnI+UjIy" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_23401845ad864b7c9e4e52a2c5b8cf5e.setContent(i_frame_19f089404ec549cfb2c1a82356c5cb15);
+        
+
+        marker_e110c9fb5091402caa8f296941b43bd3.bindPopup(popup_23401845ad864b7c9e4e52a2c5b8cf5e)
+        ;
+
+        
+    
+    
+            marker_e110c9fb5091402caa8f296941b43bd3.bindTooltip(
+                `<div>
+                     青埔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1296920f9f24a30ae7874e5be93867b = L.marker(
+                [22.75339067, 120.3146113],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_43d5ff172f2349f3bff31e75cce4b2f1 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_f61380cac4984eacbe8481cdefe0e4a9 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjIyQSZuYnNwO+api+mgreezluW7oDwvaDI+PC9iQ2lhb3RvdSBTdWdhciBSZWZpbmVyeT48aHI+PGJyPkNpYW90b3UgU3VnYXIgUmVmaW5lcnk8YnI+UjIyQQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_43d5ff172f2349f3bff31e75cce4b2f1.setContent(i_frame_f61380cac4984eacbe8481cdefe0e4a9);
+        
+
+        marker_c1296920f9f24a30ae7874e5be93867b.bindPopup(popup_43d5ff172f2349f3bff31e75cce4b2f1)
+        ;
+
+        
+    
+    
+            marker_c1296920f9f24a30ae7874e5be93867b.bindTooltip(
+                `<div>
+                     橋頭糖廠
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6eb10e4e74a94fcca757d1a76e53f567 = L.marker(
+                [22.76045473, 120.310985],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_1192ee4aceae4803870822ac4b94324a = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_c8d290452fa64cf6afb5798372c1e8db = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjIzJm5ic3A75qmL6aCt54Gr6LuK56uZPC9oMj48L2JDaWFvdG91IFN0YXRpb24+PGhyPjxicj5DaWFvdG91IFN0YXRpb248YnI+UjIz" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_1192ee4aceae4803870822ac4b94324a.setContent(i_frame_c8d290452fa64cf6afb5798372c1e8db);
+        
+
+        marker_6eb10e4e74a94fcca757d1a76e53f567.bindPopup(popup_1192ee4aceae4803870822ac4b94324a)
+        ;
+
+        
+    
+    
+            marker_6eb10e4e74a94fcca757d1a76e53f567.bindTooltip(
+                `<div>
+                     橋頭火車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb1c6c2db97d4aa9995d9b990bf272f5 = L.marker(
+                [22.78058, 120.30165],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_ef35c0d6329f4e8db4e67eb08269d8d3 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_bcf9179071994d049bb2348389a73aed = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+UjI0Jm5ic3A75Y2X5bKh5bGxPC9oMj48L2JHYW5nc2hhbiBTb3V0aD48aHI+PGJyPkdhbmdzaGFuIFNvdXRoPGJyPlIyNA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_ef35c0d6329f4e8db4e67eb08269d8d3.setContent(i_frame_bcf9179071994d049bb2348389a73aed);
+        
+
+        marker_cb1c6c2db97d4aa9995d9b990bf272f5.bindPopup(popup_ef35c0d6329f4e8db4e67eb08269d8d3)
+        ;
+
+        
+    
+    
+            marker_cb1c6c2db97d4aa9995d9b990bf272f5.bindTooltip(
+                `<div>
+                     南岡山
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f474cd41ed73400db1f82029dfa9a7d1 = L.marker(
+                [22.62154049, 120.2745284],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_8c50efba18bd4f33860100803468f6a9 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_9cca99415b7f4bf58c9a4a8b77eb732b = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzEmbmJzcDvopb/lrZDngaM8L2gyPjwvYlNpemlod2FuPjxocj48YnI+U2l6aWh3YW48YnI+TzE=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8c50efba18bd4f33860100803468f6a9.setContent(i_frame_9cca99415b7f4bf58c9a4a8b77eb732b);
+        
+
+        marker_f474cd41ed73400db1f82029dfa9a7d1.bindPopup(popup_8c50efba18bd4f33860100803468f6a9)
+        ;
+
+        
+    
+    
+            marker_f474cd41ed73400db1f82029dfa9a7d1.bindTooltip(
+                `<div>
+                     西子灣
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bdfdc09ad18420a911dff6e0dd6418f = L.marker(
+                [22.62350135, 120.2837767],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_a1f49367ce124036838e8f58ccd31912 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_f034ea355d694d8fa239d5788ca186cc = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzImbmJzcDvpub3ln5Xln5Q8L2gyPjwvYllhbmNoZW5ncHU+PGhyPjxicj5ZYW5jaGVuZ3B1PGJyPk8y" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_a1f49367ce124036838e8f58ccd31912.setContent(i_frame_f034ea355d694d8fa239d5788ca186cc);
+        
+
+        marker_5bdfdc09ad18420a911dff6e0dd6418f.bindPopup(popup_a1f49367ce124036838e8f58ccd31912)
+        ;
+
+        
+    
+    
+            marker_5bdfdc09ad18420a911dff6e0dd6418f.bindTooltip(
+                `<div>
+                     鹽埕埔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28ca2c9808a7433ea817c8cb03b556b6 = L.marker(
+                [22.62898766, 120.2949347],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_f8815ff582954808bd637bcc0d8c36c3 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_5129657304dc430a89af9917d5d4f34e = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzQmbmJzcDvluILorbDmnIM8L2gyPjwvYkNpdHkgQ291bmNpbD48aHI+PGJyPkNpdHkgQ291bmNpbDxicj5PNA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f8815ff582954808bd637bcc0d8c36c3.setContent(i_frame_5129657304dc430a89af9917d5d4f34e);
+        
+
+        marker_28ca2c9808a7433ea817c8cb03b556b6.bindPopup(popup_f8815ff582954808bd637bcc0d8c36c3)
+        ;
+
+        
+    
+    
+            marker_28ca2c9808a7433ea817c8cb03b556b6.bindTooltip(
+                `<div>
+                     市議會
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb45bbc686b545acbde1b8fdb7dfa14d = L.marker(
+                [22.631386, 120.301951],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_fea7698dd8294d579ec4d5ef7607eb50 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_024ad2f824df4647bc6b85ca706dac06 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzUmbmJzcDvnvo7pupfls7Y8L2gyPjwvYkZvcm1vc2EgQm91bGV2YXJkPjxocj48YnI+Rm9ybW9zYSBCb3VsZXZhcmQ8YnI+TzU=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_fea7698dd8294d579ec4d5ef7607eb50.setContent(i_frame_024ad2f824df4647bc6b85ca706dac06);
+        
+
+        marker_bb45bbc686b545acbde1b8fdb7dfa14d.bindPopup(popup_fea7698dd8294d579ec4d5ef7607eb50)
+        ;
+
+        
+    
+    
+            marker_bb45bbc686b545acbde1b8fdb7dfa14d.bindTooltip(
+                `<div>
+                     美麗島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8cf4b53a3a94e5493c5219d4a695dee = L.marker(
+                [22.63073055, 120.3116502],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_c33f29c58c3c45138d92d46ac40cbd05 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_d42426ce73234b6cb3235ca48456e719 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzYmbmJzcDvkv6HnvqnlnIvlsI88L2gyPjwvYlNpbnlpIEVsZW1lbnRhcnkgU2Nob29sPjxocj48YnI+U2lueWkgRWxlbWVudGFyeSBTY2hvb2w8YnI+TzY=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_c33f29c58c3c45138d92d46ac40cbd05.setContent(i_frame_d42426ce73234b6cb3235ca48456e719);
+        
+
+        marker_f8cf4b53a3a94e5493c5219d4a695dee.bindPopup(popup_c33f29c58c3c45138d92d46ac40cbd05)
+        ;
+
+        
+    
+    
+            marker_f8cf4b53a3a94e5493c5219d4a695dee.bindTooltip(
+                `<div>
+                     信義國小
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f19c1cd046f4fdd883c0154fff8f468 = L.marker(
+                [22.63039386, 120.3174438],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_5beace3623bb4d5abcb69a6a30d93c0e = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_4ba064a79bac49ae97762321ab00bb30 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzcmbmJzcDvmlofljJbkuK3lv4M8L2gyPjwvYkN1bHR1YWwgQ2VudGVyPjxocj48YnI+Q3VsdHVhbCBDZW50ZXI8YnI+Tzc=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5beace3623bb4d5abcb69a6a30d93c0e.setContent(i_frame_4ba064a79bac49ae97762321ab00bb30);
+        
+
+        marker_6f19c1cd046f4fdd883c0154fff8f468.bindPopup(popup_5beace3623bb4d5abcb69a6a30d93c0e)
+        ;
+
+        
+    
+    
+            marker_6f19c1cd046f4fdd883c0154fff8f468.bindTooltip(
+                `<div>
+                     文化中心
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c5514d0230145849ae9f71fcde6d9d6 = L.marker(
+                [22.62952241, 120.3277005],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_1cbb836bd7e64db89b1debe7015080aa = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_a81421e4d49444f5afcae3fd08443c73 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzgmbmJzcDvkupTloYrljp08L2gyPjwvYld1a3VhaWN1bz48aHI+PGJyPld1a3VhaWN1bzxicj5POA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_1cbb836bd7e64db89b1debe7015080aa.setContent(i_frame_a81421e4d49444f5afcae3fd08443c73);
+        
+
+        marker_8c5514d0230145849ae9f71fcde6d9d6.bindPopup(popup_1cbb836bd7e64db89b1debe7015080aa)
+        ;
+
+        
+    
+    
+            marker_8c5514d0230145849ae9f71fcde6d9d6.bindTooltip(
+                `<div>
+                     五塊厝
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78e57338dd6d47068ca4f749d5e84286 = L.marker(
+                [22.62722493, 120.3346313],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_60d2efd287e24bfeaf8e3ae16af83d83 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_6e2b57dab9fc47759b22fb7090eb4fe8 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzkmbmJzcDvmioDmk4rppKg8L2gyPjwvYk1hcnRpYWwgQXJ0cyBTdGFkaXVtPjxocj48YnI+TWFydGlhbCBBcnRzIFN0YWRpdW08YnI+Tzk=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_60d2efd287e24bfeaf8e3ae16af83d83.setContent(i_frame_6e2b57dab9fc47759b22fb7090eb4fe8);
+        
+
+        marker_78e57338dd6d47068ca4f749d5e84286.bindPopup(popup_60d2efd287e24bfeaf8e3ae16af83d83)
+        ;
+
+        
+    
+    
+            marker_78e57338dd6d47068ca4f749d5e84286.bindTooltip(
+                `<div>
+                     技擊館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79573c24498f44639e327815086023b1 = L.marker(
+                [22.62508586, 120.3410901],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_18448f0589524e679f3c977b1cf083e7 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_87ad45b69b124a2ea47979cf85be4f06 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzEwJm5ic3A76KGb5q2m54efPC9oMj48L2JXZWl3dXlpbmc+PGhyPjxicj5XZWl3dXlpbmc8YnI+TzEw" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_18448f0589524e679f3c977b1cf083e7.setContent(i_frame_87ad45b69b124a2ea47979cf85be4f06);
+        
+
+        marker_79573c24498f44639e327815086023b1.bindPopup(popup_18448f0589524e679f3c977b1cf083e7)
+        ;
+
+        
+    
+    
+            marker_79573c24498f44639e327815086023b1.bindTooltip(
+                `<div>
+                     衛武營
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c089613f3b4a4befb3f2d4ae54bc9a61 = L.marker(
+                [22.62530373, 120.3483428],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_c8ed7496c5e9474baf28ec03236d0526 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_c3b12cdd76664ce9a8986646994d4d5d = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzExJm5ic3A76bOz5bGx6KW/56uZPC9oMj48L2JGb25nc2hhbiBXZXN0Pjxocj48YnI+Rm9uZ3NoYW4gV2VzdDxicj5PMTE=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_c8ed7496c5e9474baf28ec03236d0526.setContent(i_frame_c3b12cdd76664ce9a8986646994d4d5d);
+        
+
+        marker_c089613f3b4a4befb3f2d4ae54bc9a61.bindPopup(popup_c8ed7496c5e9474baf28ec03236d0526)
+        ;
+
+        
+    
+    
+            marker_c089613f3b4a4befb3f2d4ae54bc9a61.bindTooltip(
+                `<div>
+                     鳳山西站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b72333f2d9e46a8ab0c086a7a519d7d = L.marker(
+                [22.62597715, 120.3553595],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_e08cdfa10894480eb09941d7da11cf92 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_97e03ff200284007b1f9fc482f566813 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzEyJm5ic3A76bOz5bGxPC9oMj48L2JGb25nc2hhbj48aHI+PGJyPkZvbmdzaGFuPGJyPk8xMg==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_e08cdfa10894480eb09941d7da11cf92.setContent(i_frame_97e03ff200284007b1f9fc482f566813);
+        
+
+        marker_2b72333f2d9e46a8ab0c086a7a519d7d.bindPopup(popup_e08cdfa10894480eb09941d7da11cf92)
+        ;
+
+        
+    
+    
+            marker_2b72333f2d9e46a8ab0c086a7a519d7d.bindTooltip(
+                `<div>
+                     鳳山
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83f3250469584617a05363e94f76b3d3 = L.marker(
+                [22.62538296, 120.3632344],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_5fd7585949664cfa8851edbabd8bc255 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_400a471893134276b5097552bb1503ff = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzEzJm5ic3A75aSn5p2xPC9oMj48L2JEYWRvbmc+PGhyPjxicj5EYWRvbmc8YnI+TzEz" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5fd7585949664cfa8851edbabd8bc255.setContent(i_frame_400a471893134276b5097552bb1503ff);
+        
+
+        marker_83f3250469584617a05363e94f76b3d3.bindPopup(popup_5fd7585949664cfa8851edbabd8bc255)
+        ;
+
+        
+    
+    
+            marker_83f3250469584617a05363e94f76b3d3.bindTooltip(
+                `<div>
+                     大東
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6ea082de0234c5da7306b21fa6ccb38 = L.marker(
+                [22.6248878, 120.3724827],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_694528cdd98046f6b7e70e3be393ca0b = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_649218a0f2d8439b924960b20ca31fb8 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzE0Jm5ic3A76bOz5bGx5ZyL5LitPC9oMj48L2JGb25nc2hhbiBKdW5pb3IgSGlnaCBTY2hvb2w+PGhyPjxicj5Gb25nc2hhbiBKdW5pb3IgSGlnaCBTY2hvb2w8YnI+TzE0" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_694528cdd98046f6b7e70e3be393ca0b.setContent(i_frame_649218a0f2d8439b924960b20ca31fb8);
+        
+
+        marker_f6ea082de0234c5da7306b21fa6ccb38.bindPopup(popup_694528cdd98046f6b7e70e3be393ca0b)
+        ;
+
+        
+    
+    
+            marker_f6ea082de0234c5da7306b21fa6ccb38.bindTooltip(
+                `<div>
+                     鳳山國中
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_452535d9f3a44289badf4fd6fbf3ced4 = L.marker(
+                [22.62239218, 120.389799],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_d9615ce940d642e59effa5bb5bc00fee = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_426e6cf5a9cd454d8666e8b7fe26dca5 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+T1QxJm5ic3A75aSn5a+uPC9oMj48L2JEYWxpYW8+PGhyPjxicj5EYWxpYW88YnI+T1Qx" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_d9615ce940d642e59effa5bb5bc00fee.setContent(i_frame_426e6cf5a9cd454d8666e8b7fe26dca5);
+        
+
+        marker_452535d9f3a44289badf4fd6fbf3ced4.bindPopup(popup_d9615ce940d642e59effa5bb5bc00fee)
+        ;
+
+        
+    
+    
+            marker_452535d9f3a44289badf4fd6fbf3ced4.bindTooltip(
+                `<div>
+                     大寮
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e08480bbfd80496f8a1d0c35ec194836 = L.marker(
+                [22.631386, 120.301951],
+                {}
+            ).addTo(marker_cluster_9651f306a8994594907bffdd56ed387c);
+        
+    
+        var popup_630612fe05334345828b0ce4b252b44f = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var i_frame_7c5145cc892c44ed9f513ff409d69798 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj48aDI+TzUvUjEwJm5ic3A7576O6bqX5bO2PC9oMj48L2JGb3Jtb3NhIEJvdWxldmFyZD48aHI+PGJyPkZvcm1vc2EgQm91bGV2YXJkPGJyPk81L1IxMA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_630612fe05334345828b0ce4b252b44f.setContent(i_frame_7c5145cc892c44ed9f513ff409d69798);
+        
+
+        marker_e08480bbfd80496f8a1d0c35ec194836.bindPopup(popup_630612fe05334345828b0ce4b252b44f)
+        ;
+
+        
+    
+    
+            marker_e08480bbfd80496f8a1d0c35ec194836.bindTooltip(
+                `<div>
+                     美麗島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dd6065f1843e43de8e1dac022d05f05b = L.polyline(
+                [[22.56481191, 120.3538521], [22.57011232, 120.3421469], [22.58035095, 120.3284408], [22.58853833, 120.3219713], [22.59683914, 120.3151478], [22.60583276, 120.307702], [22.61383541, 120.3046764], [22.6245709, 120.3006424], [22.631386, 120.301951], [22.63966255, 120.3027023], [22.64829692, 120.3033675], [22.65718817, 120.3030886], [22.66657386, 120.3028955], [22.67681026, 120.3066935], [22.68801596, 120.3095473], [22.70217026, 120.3025307], [22.70848479, 120.3023161], [22.71863888, 120.3072728], [22.72291407, 120.3163923], [22.72932659, 120.3210486], [22.74466397, 120.3177012], [22.75339067, 120.3146113], [22.76045473, 120.310985], [22.78058, 120.30165], [22.62154049, 120.2745284], [22.62350135, 120.2837767], [22.62898766, 120.2949347], [22.631386, 120.301951], [22.63073055, 120.3116502], [22.63039386, 120.3174438], [22.62952241, 120.3277005], [22.62722493, 120.3346313], [22.62508586, 120.3410901], [22.62530373, 120.3483428], [22.62597715, 120.3553595], [22.62538296, 120.3632344], [22.6248878, 120.3724827], [22.62239218, 120.389799], [22.631386, 120.301951]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_096c0faa35934374aaecc7aaa9b267ea);
+        
+</script>
