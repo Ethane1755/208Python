@@ -80,5 +80,5 @@ while True:
     Fs_text.pos = Fs_vector.pos + Fs_vector.axis*1.2
 
     if pre_x > pre_pre_x and pre_x > ball.pos.x:    #計算單擺週期
-        print ('simulated period = ', t, ', theoretical period = ', 2*pi*(L/g)**0.5 )    #印出單擺週期
+        print ('simulated period = ', t, ', theoretical period = ', 2*pi*(L*cos(theta)/g)**0.5 )    #印出單擺週期
         t = 0    #印出單擺週期
