@@ -13,12 +13,12 @@ size2 = 2.5                 #球2大小
 spring_k = 50              #彈力大小
 
 scene = canvas(width=1000, height=300, background=vec(0.6,0.8,0.8), center=vec(5,0,10),forward=vec(0,0,-1),range=10, fov=0.004)#設定畫面
-ball1 = sphere(radius=size1, color = color.red,opacity = 0.6, make_trail=True, interval=1000)  #設定球1
+ball1 = sphere(radius=size1, color = color.red,opacity = 0.6, make_trail=True)  #設定球1
 ball1.pos = vector(x1,4,0)             #球1位置
 ball1.v = vector (v1,-2,0)                        #球1的速度
 v1_arrow = arrow(pos=ball1.pos,axis=ball1.v,shaftwidth=0.2*size1 ,color = color.red)
 
-ball2 = sphere(radius=size2, color = color.blue,opacity = 0.6, make_trail=True, interval=1000) #設定球2
+ball2 = sphere(radius=size2, color = color.blue,opacity = 0.6, make_trail=True) #設定球2
 ball2.pos = vector(x2,0,0)             #球2位置,
 ball2.v = vector (v2,0,0)                        #球2的速度
 v2_arrow = arrow(pos=ball2.pos,axis=ball2.v,shaftwidth=0.2*size2 ,color = color.blue)
