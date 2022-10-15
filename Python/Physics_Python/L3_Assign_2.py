@@ -1,12 +1,10 @@
 from vpython import *
 
-
 g = 9.8                 #重力加速度 9.8 m/s^2
 size = 0.05             #球半徑 0.05 m            
 L = 0.5                 #彈簧原長 0.5m
 k = 100000              #彈簧力常數 100000 N/m
 m = 0.1                 #球質量 0.1 kg
-theta = 30 * pi/180     #初始擺角
 Fg = m*vector(0,-g,0)   #球所受重力向量
 damp = 1
 
@@ -20,16 +18,17 @@ def SpringDamp(v, r):  #避震器
     spring_damp = - damp * projection_vector                #沿彈簧軸方向的阻力
     return spring_damp
 
-scene = canvas(width=1500, height=700, center=vector(0, -L*0.8, 0), range=1.2*L)#設定畫面
+scene = canvas(width=1300, height=700, center=vector(0, -L*0.8, 0), range=1.2*L)#設定畫面
 ceiling = box(length=0.4, height=0.005, width=0.4, opacity = 0.2)#畫天花板
 ball = sphere(radius = size,  color=color.red, make_trail = True, retain = 5000, interval=1)#畫球
 ball1 = sphere(radius = size,  color=color.green, make_trail = True, retain = 5000, interval=1)#畫球
 rod = cylinder(radius=size/10)#畫棒子
 rod1 = cylinder(radius=size/10)#畫棒子
 
-gd = graph(title = "x-t plot", width=600, height=400, xtitle="t", ytitle="x")
+gd = graph(width=600, height=400)
 f1 = gcurve(color=color.red)  
-f2 = gcurve(color=color.green)  
+f2 = gcurve(color=color.green) 
+f3 = gcurve(color=color.blue) 
 
 ball.pos = vector(L,0, 0)   #球的初始位置
 ball1.pos = vector(2*L,0, 0)   #球的初始位置
@@ -43,7 +42,8 @@ t = 0.0       #初始時間
 
 pre_x = ball.pos.x         #三點記錄法，初始設定
 
-while t<10:
+
+while True:
     rate(1/dt)
     rod1.pos = ball.pos                 #外棒的位子在紅球處
     rod.axis = ball.pos                #內棒的軸方向由原點指向紅球
@@ -52,6 +52,7 @@ while t<10:
     ball1.a = (Fg + SpringForce(rod1.axis,L)+SpringDamp(ball1.v, rod1.axis))/m    #牛頓第二定律：加速度＝合力/質量
     F1 = vector(0, -m*g, 0) + SpringForce(rod.axis,L) - SpringForce(rod1.axis,L)
     F2 = vector(0, -m*g, 0) + SpringForce(rod1.axis,L)
+    F = F1+F2
 
     pre_pre_x = pre_x      #三點記錄法，前前時刻x座標
     pre_x = ball.pos.x     #三點記錄法，前一時刻x座標
@@ -61,8 +62,19 @@ while t<10:
     ball1.v += F2/m*dt    #速度
     ball1.pos += ball1.v*dt  #三點記錄法，現在時刻x座標
     t += dt
+    
+    Ug = m * g * (ball.pos.y)
+    K = 0.5 * m * mag(ball.v)**2
+    F1 = Ug+K
+    
+    Ug1 = m * g * (ball1.pos.y)
+    K1 = 0.5 * m * mag(ball1.v)**2
+    F2 = Ug1+K1
+    
+    F = F1 + F2
 
-    f1.plot(pos=(t,mag(F1)))    
-    f2.plot(pos=(t,mag(F2)))  
+    f1.plot(pos=(t,F1))    
+    f2.plot(pos=(t,F2))
+    f3.plot(pos=(t,F))
 
 
