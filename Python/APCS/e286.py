@@ -15,9 +15,9 @@ d=list(map(int,d))
 
 print(str(sum(a))+":"+str(sum(b)))
 print(str(sum(c))+":"+str(sum(d)))
+if sum(a) > sum(b) and sum(c) < sum(d) or sum(a) < sum(b) and sum(c) > sum(d):
+    print('Tie')
 if sum(a) > sum(b) and sum(c) > sum(d):
     print('Win')
 if sum(a) < sum(b) and sum(c) < sum(d):
     print('Lose')
-if sum(a) == sum(b) and sum(c) == sum(d):
-    print('Tie')
