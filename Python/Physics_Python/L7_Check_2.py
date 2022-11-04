@@ -5,7 +5,7 @@ N = 50             #介質個數
 omega = 2*pi/1.0   #振動角頻率
 size = 0.1         #介質的大小
 m = 0.1            #介質的質量
-k = 6000.0          #每一小段彈簧的彈力常數
+k = 100.0          #每一小段彈簧的彈力常數
 d = 0.4            #介質之間的初始間隔
      
 scene = canvas(title='Spring Wave', width=1200, height=300, range = 0.4*50/6, center = vector((N-1)*d/2, 0, 0)) 
