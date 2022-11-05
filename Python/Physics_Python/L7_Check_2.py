@@ -7,7 +7,7 @@ size = 0.1         #介質的大小
 m = 0.1            #介質的質量
 k = 100.0          #每一小段彈簧的彈力常數
 d = 0.4            #介質之間的初始間隔
-     
+
 scene = canvas(title='Spring Wave', width=1200, height=300, range = 0.4*50/6, center = vector((N-1)*d/2, 0, 0)) 
 ball = [sphere(radius=size, color=color.yellow, pos=vector(i*d, 0, 0), v=vector(0,0,0)) for i in range(N)]
 #以list comprehensions方式產生N個球
@@ -17,7 +17,7 @@ spring = [helix(radius = size/2.0, thickness = d/15.0, pos=vector(i*d, 0, 0), ax
 
 def SpringForce(r):    #彈力
     return - k*(mag(r)-d)*r/mag(r)
-      
+
 t, dt = 0, 0.001       #初始時間，時間差
 while True:
     rate(1000)
