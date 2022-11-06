@@ -23,17 +23,9 @@ while True:  #執行迴圈
     
     materv += Fg_vector/m*dt   #Δv = F/m *dt
     mater.pos = mater.pos + materv*dt  # S = S0 + v *dt
-  
+
     t = t+dt
     T = T+dt
     if pre_mater_pos.x > pre_pre_mater_pos.x and pre_mater_pos.x > mater.pos.x :
-       print (mater.pos,T,t) #印出右端點
-       T = 0
-    #if pre_mater_pos.x < pre_pre_mater_pos.x and pre_mater_pos.x < mater.pos.x : 
-       #print (mater.pos) #印出左端點
-    #if pre_mater_pos.y > pre_pre_mater_pos.y and pre_mater_pos.y > mater.pos.y  :
-       #print (mater.pos) #印出上端點
-    #if pre_mater_pos.y < pre_pre_mater_pos.y and pre_mater_pos.y < mater.pos.y  :
-      # print (mater.pos) #印出下端點
-
-   
+        print (mater.pos,T,t) #印出右端點
+        T = 0
