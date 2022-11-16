@@ -1,4 +1,3 @@
-from re import A
 from vpython import *  
 import pandas as pd
 
