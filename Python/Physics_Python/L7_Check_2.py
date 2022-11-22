@@ -14,7 +14,6 @@ ball = [sphere(radius=size, color=color.yellow, pos=vector(i*d, 0, 0), v=vector(
 spring = [helix(radius = size/2.0, thickness = d/15.0, pos=vector(i*d, 0, 0), axis=vector(d,0,0)) for i in range(N-1)]
 #以list comprehensions方式產生N-1條彈簧
 
-
 def SpringForce(r):    #彈力
     return - k*(mag(r)-d)*r/mag(r)
 
@@ -31,7 +30,7 @@ while True:
         spring[i].pos = ball[i].pos
         spring[i].axis = ball[i+1].pos - ball[i].pos
 
-    #計算每一個球受相鄰兩條彈簧的彈力
+    #計算每一個球受相鄰兩條彈簧的彈力sada
     #from index 1 to 50, the elements are 1, 2, 3, 4,... , 49
     for i in range(1, N):      
         if i == N-1: ball[-1].v==0                           #最後一個球
