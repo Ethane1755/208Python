@@ -29,7 +29,8 @@ while True:
     t = t+dt            #累計時間
     Ts = t % 60         #計算「秒 sec」
     Tm = int( t/60 )    #計算「分 min」
-    timer.text = str('Timer : \n') + str('%1.0f'%Tm) + str(' min ') + str('%1.2f '%Ts) + str(' sec')
+    T0 = 2*pi*sqrt(1.05/g)
+    timer.text = str('T= ') + str(round(t/T0,2)) + str(' T0')
 
     a = []    #產生一個空白的list，稍後計算每一個擺錘的加速度，並放入此list中
     for j in range(0,n,1):

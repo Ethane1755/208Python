@@ -67,4 +67,5 @@ while True:
         if mag(N.pos-Q1_position)>=size and mag(N.pos-Q2_position)>=size :
             N.v = N.v + Force_E(N.pos, q_charge)/q_m *dt
             N.pos = N.pos+N.v*dt
-        else : N.pos = N.pos
+        else : 
+            N.pos = N.pos
